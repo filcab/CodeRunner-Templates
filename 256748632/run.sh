@@ -1,0 +1,1 @@
+cd "$curdir"; osascript -l JavaScript "$PWD/$1"; exit; "${@:3}"

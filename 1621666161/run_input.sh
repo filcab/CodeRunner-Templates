@@ -1,0 +1,1 @@
+bash "/Users/filcab/Library/Application Support/CodeRunner/Languages/1621666161/run.sh" "$@" < "/Users/filcab/Library/Application Support/CodeRunner/input.txt"
