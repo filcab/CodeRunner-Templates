@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerFlags</key>
+	<string></string>
+	<key>CompilerScript</key>
+	<false/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>FileExtensions</key>
+	<array>
+		<string>pl</string>
+	</array>
+	<key>Grammar</key>
+	<string>source.perl</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>Name</key>
+	<string>Perl</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RunCommand</key>
+	<string>perl $filename</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<integer>4</integer>
+	<key>Templates</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<true/>
+			<key>Extension</key>
+			<string>pl</string>
+			<key>Name</key>
+			<string>Perl Script</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string>#!/usr/bin/perl
+
+&lt;##&gt;</string>
+			<key>TemplateModified</key>
+			<true/>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>64A50F8B-F915-49CE-BD6A-0E5305190918</string>
+</dict>
+</plist>

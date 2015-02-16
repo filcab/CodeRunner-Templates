@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerFlags</key>
+	<string></string>
+	<key>CompilerScript</key>
+	<false/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>FileExtensions</key>
+	<array>
+		<string>jscpt</string>
+	</array>
+	<key>Grammar</key>
+	<string>source.js</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>Name</key>
+	<string>OSA Javascript</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RunCommand</key>
+	<string>osascript -l JavaScript "$PWD/$filename"; exit;</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<integer>4</integer>
+	<key>Templates</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<true/>
+			<key>Extension</key>
+			<string>jscpt</string>
+			<key>Name</key>
+			<string>OSA Javascript File</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string>App = Application.currentApplication();
+
+App.includeStandardAdditions = true;
+
+answer = App.displayDialog('Is it me you\'re looking for?', {
+  withTitle: 'Hello',
+  defaultAnswer: 'Yes'
+});</string>
+			<key>TemplateModified</key>
+			<true/>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>CC0F851D-AF91-45D0-8BA4-12A97168A48F</string>
+</dict>
+</plist>

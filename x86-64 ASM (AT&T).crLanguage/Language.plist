@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerFlags</key>
+	<string></string>
+	<key>CompilerScript</key>
+	<true/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>FileExtensions</key>
+	<array>
+		<string>S</string>
+	</array>
+	<key>Grammar</key>
+	<string>none</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>Name</key>
+	<string>x86-64 ASM (AT&amp;T)</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RunCommand</key>
+	<string>"./$compiler"</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<integer>4</integer>
+	<key>Templates</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<true/>
+			<key>Extension</key>
+			<string>S</string>
+			<key>Name</key>
+			<string>x86-64 ASM (AT&amp;T) File</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string>.text
+.macosx_version_min 10, 10
+
+# Recent macosx use _main as entry point, instead of start
+.globl _main
+.align 4, 0x90
+_main:
+&lt;##&gt;
+mov $0x2000004, %rax         # System call write = 4
+mov $1, %rdi                 # Write to standard out = 1
+lea hello_world(%rip), %rsi  # The address of hello_world string
+mov $14, %rdx                # The size to write
+syscall                      # Invoke the kernel
+mov $0x2000001, %rax         # System call number for exit = 1
+xor %rdi, %rdi               # Exit success = 0
+syscall                      # Invoke the kernel
+
+.data
+.globl hello_world
+hello_world:
+.asciz "Hello World!\n"</string>
+			<key>TemplateModified</key>
+			<true/>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>4DC1F7F0-E4E0-497A-8614-24F8FF11024C</string>
+</dict>
+</plist>

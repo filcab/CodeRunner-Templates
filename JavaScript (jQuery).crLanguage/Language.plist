@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerFlags</key>
+	<string></string>
+	<key>CompilerScript</key>
+	<false/>
+	<key>ConsoleType</key>
+	<integer>1</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>FileExtensions</key>
+	<array>
+		<string>js</string>
+	</array>
+	<key>Grammar</key>
+	<string>source.js.jquery</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>LiveConsole</key>
+	<false/>
+	<key>Name</key>
+	<string>JavaScript (jQuery)</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RunCommand</key>
+	<string>echo "&lt;script src=\"http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js\"&gt;&lt;/script&gt;&lt;body&gt;&lt;/body&gt;&lt;script&gt;"; cat $filename; echo "&lt;/script&gt;"</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<integer>4</integer>
+	<key>Templates</key>
+	<array/>
+	<key>uuid</key>
+	<string>B2BAD283-A431-45E6-B53C-8FCE8081C0B3</string>
+</dict>
+</plist>

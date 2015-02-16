@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerFlags</key>
+	<string>-std=c99</string>
+	<key>CompilerScript</key>
+	<true/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>FileExtensions</key>
+	<array>
+		<string>c</string>
+		<string>h</string>
+	</array>
+	<key>Grammar</key>
+	<string>source.c</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>Name</key>
+	<string>C</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RequiresExternalComponents</key>
+	<true/>
+	<key>RunCommand</key>
+	<string>./$compiler</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<integer>4</integer>
+	<key>Templates</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<true/>
+			<key>Extension</key>
+			<string>c</string>
+			<key>Name</key>
+			<string>Main File</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string>#include &lt;stdio.h&gt;
+
+int main(int argc, char *argv[]) {
+	&lt;##&gt;
+}</string>
+			<key>TemplateModified</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>Header</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>Header-C Pair</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+#ifndef ____FILEBASENAME_______FILEEXTENSION____
+#define ____FILEBASENAME_______FILEEXTENSION____
+
+&lt;##&gt;
+
+#endif</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>c</string>
+			<key>Name</key>
+			<string>Header-C Pair</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+#include "___FILEBASENAME___.h"
+
+&lt;##&gt;</string>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>F158B03F-4059-4FBE-95FB-F101FC3C2097</string>
+</dict>
+</plist>

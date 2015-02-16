@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CodeTemplate</key>
+	<string></string>
+	<key>CompilerFlags</key>
+	<string></string>
+	<key>CompilerScript</key>
+	<false/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>Errors</key>
+	<dict>
+		<key>127</key>
+		<string>Could not find Node.js on your system. You can get it at http://nodejs.org</string>
+	</dict>
+	<key>FileExtensions</key>
+	<array>
+		<string>js</string>
+	</array>
+	<key>Grammar</key>
+	<string>source.js.node</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>LastUsed</key>
+	<date>2015-02-16T07:18:38Z</date>
+	<key>Name</key>
+	<string>JavaScript (Node.js)</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RunCommand</key>
+	<string>node $filename</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<integer>4</integer>
+	<key>Templates</key>
+	<array/>
+	<key>UseCount</key>
+	<integer>1</integer>
+	<key>uuid</key>
+	<string>C871AFED-ADA2-4CDA-955A-68B11C6AA5B5</string>
+</dict>
+</plist>

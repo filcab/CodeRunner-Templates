@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerScript</key>
+	<true/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
+	<key>Enabled</key>
+	<string>YES</string>
+	<key>FileExtensions</key>
+	<array>
+		<string>java</string>
+	</array>
+	<key>Grammar</key>
+	<string>source.java</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>Name</key>
+	<string>Java</string>
+	<key>OutputEncoding</key>
+	<integer>30</integer>
+	<key>RequiresExternalComponents</key>
+	<true/>
+	<key>RunCommand</key>
+	<string>eval $compiler</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<string>4</string>
+	<key>Templates</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<true/>
+			<key>Extension</key>
+			<string>java</string>
+			<key>Name</key>
+			<string>Main File</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string>class Untitled {
+	public static void main(String[] args) {
+		&lt;##&gt;
+	}
+}</string>
+			<key>TemplateModified</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>java</string>
+			<key>Name</key>
+			<string>Class</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+public class ___FILEBASENAME___ {
+	&lt;##&gt;
+}</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>java</string>
+			<key>Name</key>
+			<string>Interface</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+public interface ___FILEBASENAME___ {
+	&lt;##&gt;
+}</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>java</string>
+			<key>Name</key>
+			<string>Enum</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+public enum ___FILEBASENAME___ {
+	&lt;##&gt;
+}</string>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>123A91F7-DC75-4DA4-AC58-2D9FBC35F8C5</string>
+</dict>
+</plist>

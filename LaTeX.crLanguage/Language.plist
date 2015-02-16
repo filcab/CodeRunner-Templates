@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerFlags</key>
+	<string>-file-line-error</string>
+	<key>CompilerScript</key>
+	<true/>
+	<key>ConsoleType</key>
+	<integer>1</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>FileExtensions</key>
+	<array>
+		<string>tex</string>
+	</array>
+	<key>Grammar</key>
+	<string>text.tex.latex</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>Name</key>
+	<string>LaTeX</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RunCommand</key>
+	<string>echo "&lt;body style=\"margin:0;\"&gt;&lt;iframe src=\"file://$compiler\" style=\"width:100%;height:100%;\" frameborder=0&gt;&lt;/iframe&gt;"</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<integer>4</integer>
+	<key>Templates</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<integer>1</integer>
+			<key>Extension</key>
+			<string>tex</string>
+			<key>Name</key>
+			<string>LaTeX Document</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string>\documentclass[12pt]{article}
+\begin{document}
+	&lt;##&gt;
+\end{document}</string>
+			<key>TemplateModified</key>
+			<true/>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>1D9475F2-F52D-4F8B-AD10-257A00223011</string>
+</dict>
+</plist>

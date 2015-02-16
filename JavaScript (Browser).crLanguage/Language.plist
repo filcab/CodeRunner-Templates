@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerFlags</key>
+	<string></string>
+	<key>CompilerScript</key>
+	<false/>
+	<key>ConsoleType</key>
+	<integer>1</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>FileExtensions</key>
+	<array>
+		<string>js</string>
+	</array>
+	<key>Grammar</key>
+	<string>source.js.browser</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>LiveConsole</key>
+	<false/>
+	<key>Name</key>
+	<string>JavaScript (Browser)</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RunCommand</key>
+	<string>echo "&lt;body&gt;&lt;/body&gt;&lt;script&gt;"; cat $filename; echo "&lt;/script&gt;"</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<integer>4</integer>
+	<key>Templates</key>
+	<array/>
+	<key>uuid</key>
+	<string>BDBEA569-54FA-4E18-9E33-35F90DDECE1A</string>
+</dict>
+</plist>

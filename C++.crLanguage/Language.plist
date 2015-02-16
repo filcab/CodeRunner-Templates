@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerFlags</key>
+	<string>-std=c++11</string>
+	<key>CompilerScript</key>
+	<true/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>FileExtensions</key>
+	<array>
+		<string>cpp</string>
+		<string>cc</string>
+		<string>cp</string>
+		<string>cxx</string>
+		<string>c++</string>
+		<string>h</string>
+		<string>hh</string>
+		<string>hpp</string>
+		<string>h++</string>
+	</array>
+	<key>Grammar</key>
+	<string>source.c++</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>Name</key>
+	<string>C++</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RequiresExternalComponents</key>
+	<true/>
+	<key>RunCommand</key>
+	<string>./$compiler</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<string>4</string>
+	<key>Templates</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<true/>
+			<key>Extension</key>
+			<string>cpp</string>
+			<key>Name</key>
+			<string>Main File</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string>#include &lt;iostream&gt;
+
+using namespace std;
+int main(int argc, char *argv[]) {
+	&lt;##&gt;
+}</string>
+			<key>TemplateModified</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>Header</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>Class</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+#ifndef ____FILEBASENAME_______FILEEXTENSION____
+#define ____FILEBASENAME_______FILEEXTENSION____
+
+class ___FILEBASENAME___ {
+public:
+	___FILEBASENAME___();
+	virtual ~___FILEBASENAME___();
+};
+
+#endif</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>cpp</string>
+			<key>Name</key>
+			<string>Class</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+#include "___FILEBASENAME___.h"
+
+___FILEBASENAME___::___FILEBASENAME___() {
+	&lt;##&gt;
+}
+
+___FILEBASENAME___::~___FILEBASENAME___() {
+	
+}</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>Header-CPP Pair</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+#ifndef ____FILEBASENAME_______FILEEXTENSION____
+#define ____FILEBASENAME_______FILEEXTENSION____
+
+&lt;##&gt;
+
+#endif</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>cpp</string>
+			<key>Name</key>
+			<string>Header-CPP Pair</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+#include "___FILEBASENAME___.h"
+
+&lt;##&gt;</string>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>EC55AB59-7920-4862-B7EB-963CD4BB928A</string>
+</dict>
+</plist>

@@ -1,1 +1,0 @@
-cd "$curdir"; python "$1" "${@:3}"

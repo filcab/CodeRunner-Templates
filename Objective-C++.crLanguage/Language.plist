@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerFlags</key>
+	<string>-fobjc-arc -framework Foundation</string>
+	<key>CompilerScript</key>
+	<true/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>FileExtensions</key>
+	<array>
+		<string>mm</string>
+		<string>h</string>
+	</array>
+	<key>Grammar</key>
+	<string>source.objc++</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>Name</key>
+	<string>Objective-C++</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RequiresExternalComponents</key>
+	<true/>
+	<key>RunCommand</key>
+	<string>./$compiler</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<string>4</string>
+	<key>Templates</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<true/>
+			<key>Extension</key>
+			<string>mm</string>
+			<key>Name</key>
+			<string>Main File</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string>#import &lt;Foundation/Foundation.h&gt;
+
+int main(int argc, char *argv[]) {
+	@autoreleasepool {
+		&lt;##&gt;
+	}
+}</string>
+			<key>TemplateModified</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>Header</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string>#import &lt;Foundation/Foundation.h&gt;
+
+&lt;##&gt;</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>Objective-C Class</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+#import &lt;Foundation/Foundation.h&gt;
+
+@interface ___FILEBASENAME___ : NSObject
+
+&lt;##&gt;
+
+@end</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>mm</string>
+			<key>Name</key>
+			<string>Objective-C Class</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+#import "___FILEBASENAME___.h"
+
+@implementation ___FILEBASENAME___
+
+&lt;##&gt;
+
+@end</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>C++ Class</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+class ___FILEBASENAME___ {
+public:
+	___FILEBASENAME___();
+	virtual ~___FILEBASENAME___();
+};</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>mm</string>
+			<key>Name</key>
+			<string>C++ Class</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+#import "___FILEBASENAME___.h"
+
+___FILEBASENAME___::___FILEBASENAME___() {
+	&lt;##&gt;
+}
+
+___FILEBASENAME___::~___FILEBASENAME___() {
+	
+}</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>Category</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+#import &lt;Foundation/Foundation.h&gt;
+
+@interface &lt;#class#&gt; (&lt;#name#&gt;)
+
+@end</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>mm</string>
+			<key>Name</key>
+			<string>Category</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+#import "___FILEBASENAME___.h"
+
+@implementation &lt;#class#&gt; (&lt;#name#&gt;)
+
+@end</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>Protocol</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+#import &lt;Foundation/Foundation.h&gt;
+
+@protocol ___FILEBASENAME___ &lt;NSObject&gt;
+
+&lt;##&gt;
+
+@end</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>Objective-C Singleton</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+#import &lt;Foundation/Foundation.h&gt;
+
+@interface ___FILEBASENAME___ : NSObject
+
++ (___FILEBASENAME___ *)shared___FILEBASENAME___;
+
+@end</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>mm</string>
+			<key>Name</key>
+			<string>Objective-C Singleton</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+#import "___FILEBASENAME___.h"
+
+@implementation ___FILEBASENAME___
+
+static ___FILEBASENAME___ *shared___FILEBASENAME___;
+
++ (___FILEBASENAME___ *)shared___FILEBASENAME___
+{
+    @synchronized(self) {
+        if (shared___FILEBASENAME___ == nil) {
+            shared___FILEBASENAME___ = [[self alloc] init];
+        }
+    }
+    return shared___FILEBASENAME___;
+}
+
++ (id)allocWithZone:(NSZone *)zone
+{
+    @synchronized(self) {
+        if (shared___FILEBASENAME___ == nil) {
+            return [super allocWithZone:zone];
+        }
+    }
+    return shared___FILEBASENAME___;
+}
+
+- (id)init
+{
+    Class myClass = [self class];
+    @synchronized(myClass) {
+        if (shared___FILEBASENAME___ == nil) {
+            if (self = [super init]) {
+                shared___FILEBASENAME___ = self;
+                // Custom initialization here
+                &lt;##&gt;
+            }
+        }
+    }
+    return shared___FILEBASENAME___;
+}
+
+@end</string>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>54152989-9931-4123-8B23-584872677F75</string>
+</dict>
+</plist>

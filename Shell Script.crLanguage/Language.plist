@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerFlags</key>
+	<string></string>
+	<key>CompilerScript</key>
+	<false/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>FileExtensions</key>
+	<array>
+		<string>sh</string>
+	</array>
+	<key>Grammar</key>
+	<string>source.shell</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>LastUsed</key>
+	<date>2015-02-16T07:20:04Z</date>
+	<key>Name</key>
+	<string>Shell Script</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RunCommand</key>
+	<string>bash $filename</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<integer>4</integer>
+	<key>Templates</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<true/>
+			<key>Extension</key>
+			<string>sh</string>
+			<key>Name</key>
+			<string>Shell Script</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string>#!/bin/bash
+
+&lt;##&gt;</string>
+			<key>TemplateModified</key>
+			<true/>
+		</dict>
+	</array>
+	<key>UseCount</key>
+	<integer>9</integer>
+	<key>uuid</key>
+	<string>673C976D-FCA5-4110-A78F-5751A98CC481</string>
+</dict>
+</plist>

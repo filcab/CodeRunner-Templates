@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerFlags</key>
+	<string></string>
+	<key>CompilerScript</key>
+	<false/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>FileExtensions</key>
+	<array>
+		<string>rb</string>
+	</array>
+	<key>Grammar</key>
+	<string>source.ruby</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>Name</key>
+	<string>Ruby</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RunCommand</key>
+	<string>ruby $filename</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<integer>4</integer>
+	<key>Templates</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<true/>
+			<key>Extension</key>
+			<string>rb</string>
+			<key>Name</key>
+			<string>Ruby Script</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string>#!/usr/bin/ruby
+
+&lt;##&gt;</string>
+			<key>TemplateModified</key>
+			<true/>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>966788B5-C2C2-444C-AB8C-C97862C77C6C</string>
+</dict>
+</plist>

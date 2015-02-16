@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerFlags</key>
+	<string></string>
+	<key>CompilerScript</key>
+	<true/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>FileExtensions</key>
+	<array>
+		<string>cs</string>
+	</array>
+	<key>Grammar</key>
+	<string>source.cs</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>Name</key>
+	<string>C#</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RequiresExternalComponents</key>
+	<true/>
+	<key>RunCommand</key>
+	<string>mono $compiler</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<string>4</string>
+	<key>Templates</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<true/>
+			<key>Extension</key>
+			<string>cs</string>
+			<key>Name</key>
+			<string>Main File</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string>using System;
+
+class Untitled
+{
+	static void Main(string[] args)
+	{
+		&lt;##&gt;
+	}
+}</string>
+			<key>TemplateModified</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>cs</string>
+			<key>Name</key>
+			<string>Class</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Template</key>
+			<string>//
+// ___FILENAME___
+// Created by ___FULLUSERNAME___ on ___DATE___.
+
+public class ___FILEBASENAME___
+{
+	&lt;##&gt;
+}</string>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>9A37339F-AB15-4DDD-BF09-4C54AB627DA4</string>
+</dict>
+</plist>

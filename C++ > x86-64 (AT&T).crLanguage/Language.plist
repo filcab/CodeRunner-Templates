@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerFlags</key>
+	<string>-std=c++11</string>
+	<key>CompilerScript</key>
+	<true/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>FileExtensions</key>
+	<array>
+		<string>cpp</string>
+	</array>
+	<key>Grammar</key>
+	<string>source.c++</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>Name</key>
+	<string>C++ &gt; x86-64 (AT&amp;T)</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RunCommand</key>
+	<string>cat $compiler</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<integer>4</integer>
+	<key>Templates</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<true/>
+			<key>Extension</key>
+			<string>cpp</string>
+			<key>Name</key>
+			<string>C++ &gt; x86-64 (AT&amp;T) File</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string>#include &lt;x86intrin.h&gt;  // For all intrinsics
+void f() {
+  &lt;##&gt;
+}</string>
+			<key>TemplateModified</key>
+			<true/>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>9AFD944F-A89C-41BA-804B-113137C43856</string>
+</dict>
+</plist>

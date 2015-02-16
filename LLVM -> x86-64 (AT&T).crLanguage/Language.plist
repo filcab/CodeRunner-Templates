@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerScript</key>
+	<true/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>FileExtensions</key>
+	<array>
+		<string>ll</string>
+	</array>
+	<key>Grammar</key>
+	<string>source.c++</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>LastUsed</key>
+	<date>2015-02-16T07:19:23Z</date>
+	<key>Name</key>
+	<string>LLVM -&gt; x86-64 (AT&amp;T)</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RunCommand</key>
+	<string>cat $compiler</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<integer>4</integer>
+	<key>Templates</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<true/>
+			<key>Extension</key>
+			<string>ll</string>
+			<key>Name</key>
+			<string>C++ &gt; LLVM File</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string>define void @f() {
+	&lt;##&gt;
+}</string>
+			<key>TemplateModified</key>
+			<true/>
+		</dict>
+	</array>
+	<key>UseCount</key>
+	<integer>9</integer>
+	<key>uuid</key>
+	<string>86DB2FD4-94EC-454C-BF6E-98C8E305B7B6</string>
+</dict>
+</plist>
