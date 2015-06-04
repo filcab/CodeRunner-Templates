@@ -18,10 +18,6 @@
 	</array>
 	<key>Grammar</key>
 	<string>source.swift</string>
-	<key>LanguageBundleVersion</key>
-	<integer>1</integer>
-	<key>LastUsed</key>
-	<date>2015-02-16T07:00:03Z</date>
 	<key>Name</key>
 	<string>Swift</string>
 	<key>OutputEncoding</key>
@@ -32,17 +28,11 @@
 	<false/>
 	<key>TabWidth</key>
 	<integer>4</integer>
+	<key>uuid</key>
+	<string>8EB61A41-AAC1-4C23-B110-2E2C8B5E1162</string>
 	<key>Templates</key>
 	<array>
 		<dict>
-			<key>Default</key>
-			<false/>
-			<key>Extension</key>
-			<string>swift</string>
-			<key>Name</key>
-			<string>Class</string>
-			<key>NameOnCreation</key>
-			<true/>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
@@ -51,18 +41,16 @@
 class ___FILEBASENAME___ {
 	&lt;##&gt;
 }</string>
-			<key>TemplateModified</key>
+			<key>NameOnCreation</key>
 			<true/>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<false/>
 			<key>Extension</key>
 			<string>swift</string>
 			<key>Name</key>
-			<string>Class (NSObject)</string>
-			<key>NameOnCreation</key>
-			<true/>
+			<string>Class</string>
+			<key>Default</key>
+			<false/>
+		</dict>
+		<dict>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
@@ -73,11 +61,15 @@ import Foundation
 class ___FILEBASENAME___: NSObject {
 	&lt;##&gt;
 }</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Extension</key>
+			<string>swift</string>
+			<key>Name</key>
+			<string>Class (NSObject)</string>
+			<key>Default</key>
+			<false/>
 		</dict>
 	</array>
-	<key>UseCount</key>
-	<integer>1</integer>
-	<key>uuid</key>
-	<string>8EB61A41-AAC1-4C23-B110-2E2C8B5E1162</string>
 </dict>
 </plist>

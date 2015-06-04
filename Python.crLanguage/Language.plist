@@ -18,8 +18,6 @@
 	</array>
 	<key>Grammar</key>
 	<string>source.python</string>
-	<key>LanguageBundleVersion</key>
-	<integer>1</integer>
 	<key>Name</key>
 	<string>Python</string>
 	<key>OutputEncoding</key>
@@ -30,33 +28,33 @@
 	<false/>
 	<key>TabWidth</key>
 	<integer>4</integer>
+	<key>uuid</key>
+	<string>449F8083-10A9-446C-9482-F14F7C1A9464</string>
 	<key>Templates</key>
 	<array>
 		<dict>
-			<key>Default</key>
-			<true/>
-			<key>Extension</key>
-			<string>py</string>
 			<key>Name</key>
 			<string>Python Script</string>
+			<key>Default</key>
+			<true/>
 			<key>NameOnCreation</key>
 			<false/>
+			<key>Extension</key>
+			<string>py</string>
 			<key>Template</key>
 			<string>#!/usr/bin/python
 
 &lt;##&gt;</string>
-			<key>TemplateModified</key>
-			<true/>
 		</dict>
 		<dict>
-			<key>Default</key>
-			<false/>
-			<key>Extension</key>
-			<string>py</string>
 			<key>Name</key>
 			<string>Class</string>
+			<key>Default</key>
+			<false/>
 			<key>NameOnCreation</key>
 			<true/>
+			<key>Extension</key>
+			<string>py</string>
 			<key>Template</key>
 			<string>#!/usr/bin/python
 # ___FILENAME___
@@ -67,7 +65,5 @@ class ___FILEBASENAME___:
 		&lt;##&gt;</string>
 		</dict>
 	</array>
-	<key>uuid</key>
-	<string>449F8083-10A9-446C-9482-F14F7C1A9464</string>
 </dict>
 </plist>

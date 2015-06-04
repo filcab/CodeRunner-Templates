@@ -17,8 +17,6 @@
 	</array>
 	<key>Grammar</key>
 	<string>source.applescript</string>
-	<key>LanguageBundleVersion</key>
-	<integer>1</integer>
 	<key>Name</key>
 	<string>AppleScript</string>
 	<key>OutputEncoding</key>
@@ -29,8 +27,6 @@
 	<false/>
 	<key>TabWidth</key>
 	<integer>4</integer>
-	<key>Templates</key>
-	<array/>
 	<key>uuid</key>
 	<string>AF9F60E4-632E-40AB-93D8-6A414F37DC9B</string>
 </dict>

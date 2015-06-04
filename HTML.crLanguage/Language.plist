@@ -21,8 +21,6 @@
 	</array>
 	<key>Grammar</key>
 	<string>text.html.basic</string>
-	<key>LanguageBundleVersion</key>
-	<integer>1</integer>
 	<key>LiveConsole</key>
 	<true/>
 	<key>Name</key>
@@ -35,75 +33,73 @@
 	<false/>
 	<key>TabWidth</key>
 	<integer>4</integer>
+	<key>uuid</key>
+	<string>FFE53747-E6FA-41A9-AD88-B6E70A7D2DBE</string>
 	<key>Templates</key>
 	<array>
 		<dict>
-			<key>Default</key>
-			<true/>
-			<key>Extension</key>
-			<string>html</string>
-			<key>Name</key>
-			<string>HTML 5 Page Structure</string>
-			<key>NameOnCreation</key>
-			<false/>
 			<key>Template</key>
 			<string>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 	&lt;head&gt;
-		&lt;meta charset="UTF-8"&gt;
+		&lt;meta charset=&quot;UTF-8&quot;&gt;
 		&lt;title&gt;&lt;/title&gt;
 	&lt;/head&gt;
 	&lt;body&gt;
 		&lt;##&gt;
 	&lt;/body&gt;
 &lt;/html&gt;</string>
-			<key>TemplateModified</key>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Extension</key>
+			<string>html</string>
+			<key>Name</key>
+			<string>HTML 5 Page Structure</string>
+			<key>Default</key>
 			<true/>
 		</dict>
 		<dict>
-			<key>Default</key>
+			<key>Template</key>
+			<string>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+	&lt;head&gt;
+		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+		&lt;title&gt;&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;##&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</string>
+			<key>NameOnCreation</key>
 			<false/>
 			<key>Extension</key>
 			<string>html</string>
 			<key>Name</key>
 			<string>XHTML 1.0 Strict Page Structure</string>
-			<key>NameOnCreation</key>
+			<key>Default</key>
 			<false/>
+		</dict>
+		<dict>
 			<key>Template</key>
-			<string>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
-&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+			<string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
+&lt;html&gt;
 	&lt;head&gt;
-		&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
 		&lt;title&gt;&lt;/title&gt;
 	&lt;/head&gt;
 	&lt;body&gt;
 		&lt;##&gt;
 	&lt;/body&gt;
 &lt;/html&gt;</string>
-		</dict>
-		<dict>
-			<key>Default</key>
+			<key>NameOnCreation</key>
 			<false/>
 			<key>Extension</key>
 			<string>html</string>
 			<key>Name</key>
 			<string>HTML 4.01 Strict Page Structure</string>
-			<key>NameOnCreation</key>
+			<key>Default</key>
 			<false/>
-			<key>Template</key>
-			<string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;
-&lt;html&gt;
-	&lt;head&gt;
-		&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
-		&lt;title&gt;&lt;/title&gt;
-	&lt;/head&gt;
-	&lt;body&gt;
-		&lt;##&gt;
-	&lt;/body&gt;
-&lt;/html&gt;</string>
 		</dict>
 	</array>
-	<key>uuid</key>
-	<string>FFE53747-E6FA-41A9-AD88-B6E70A7D2DBE</string>
 </dict>
 </plist>

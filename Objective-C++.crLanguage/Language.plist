@@ -17,8 +17,6 @@
 	</array>
 	<key>Grammar</key>
 	<string>source.objc++</string>
-	<key>LanguageBundleVersion</key>
-	<integer>1</integer>
 	<key>Name</key>
 	<string>Objective-C++</string>
 	<key>OutputEncoding</key>
@@ -31,17 +29,11 @@
 	<false/>
 	<key>TabWidth</key>
 	<string>4</string>
+	<key>uuid</key>
+	<string>54152989-9931-4123-8B23-584872677F75</string>
 	<key>Templates</key>
 	<array>
 		<dict>
-			<key>Default</key>
-			<true/>
-			<key>Extension</key>
-			<string>mm</string>
-			<key>Name</key>
-			<string>Main File</string>
-			<key>NameOnCreation</key>
-			<false/>
 			<key>Template</key>
 			<string>#import &lt;Foundation/Foundation.h&gt;
 
@@ -50,32 +42,30 @@ int main(int argc, char *argv[]) {
 		&lt;##&gt;
 	}
 }</string>
-			<key>TemplateModified</key>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Extension</key>
+			<string>mm</string>
+			<key>Name</key>
+			<string>Main File</string>
+			<key>Default</key>
 			<true/>
 		</dict>
 		<dict>
-			<key>Default</key>
+			<key>Template</key>
+			<string>#import &lt;Foundation/Foundation.h&gt;
+
+&lt;##&gt;</string>
+			<key>NameOnCreation</key>
 			<false/>
 			<key>Extension</key>
 			<string>h</string>
 			<key>Name</key>
 			<string>Header</string>
-			<key>NameOnCreation</key>
-			<false/>
-			<key>Template</key>
-			<string>#import &lt;Foundation/Foundation.h&gt;
-
-&lt;##&gt;</string>
-		</dict>
-		<dict>
 			<key>Default</key>
 			<false/>
-			<key>Extension</key>
-			<string>h</string>
-			<key>Name</key>
-			<string>Objective-C Class</string>
-			<key>NameOnCreation</key>
-			<true/>
+		</dict>
+		<dict>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
@@ -88,38 +78,38 @@ int main(int argc, char *argv[]) {
 &lt;##&gt;
 
 @end</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<false/>
-			<key>Extension</key>
-			<string>mm</string>
-			<key>Name</key>
-			<string>Objective-C Class</string>
 			<key>NameOnCreation</key>
 			<true/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>Objective-C Class</string>
+			<key>Default</key>
+			<false/>
+		</dict>
+		<dict>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
 // Created by ___FULLUSERNAME___ on ___DATE___.
 
-#import "___FILEBASENAME___.h"
+#import &quot;___FILEBASENAME___.h&quot;
 
 @implementation ___FILEBASENAME___
 
 &lt;##&gt;
 
 @end</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<false/>
-			<key>Extension</key>
-			<string>h</string>
-			<key>Name</key>
-			<string>C++ Class</string>
 			<key>NameOnCreation</key>
 			<true/>
+			<key>Extension</key>
+			<string>mm</string>
+			<key>Name</key>
+			<string>Objective-C Class</string>
+			<key>Default</key>
+			<false/>
+		</dict>
+		<dict>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
@@ -130,22 +120,22 @@ public:
 	___FILEBASENAME___();
 	virtual ~___FILEBASENAME___();
 };</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<false/>
-			<key>Extension</key>
-			<string>mm</string>
-			<key>Name</key>
-			<string>C++ Class</string>
 			<key>NameOnCreation</key>
 			<true/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>C++ Class</string>
+			<key>Default</key>
+			<false/>
+		</dict>
+		<dict>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
 // Created by ___FULLUSERNAME___ on ___DATE___.
 
-#import "___FILEBASENAME___.h"
+#import &quot;___FILEBASENAME___.h&quot;
 
 ___FILEBASENAME___::___FILEBASENAME___() {
 	&lt;##&gt;
@@ -154,16 +144,16 @@ ___FILEBASENAME___::___FILEBASENAME___() {
 ___FILEBASENAME___::~___FILEBASENAME___() {
 	
 }</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<false/>
-			<key>Extension</key>
-			<string>h</string>
-			<key>Name</key>
-			<string>Category</string>
 			<key>NameOnCreation</key>
 			<true/>
+			<key>Extension</key>
+			<string>mm</string>
+			<key>Name</key>
+			<string>C++ Class</string>
+			<key>Default</key>
+			<false/>
+		</dict>
+		<dict>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
@@ -174,36 +164,36 @@ ___FILEBASENAME___::~___FILEBASENAME___() {
 @interface &lt;#class#&gt; (&lt;#name#&gt;)
 
 @end</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<false/>
-			<key>Extension</key>
-			<string>mm</string>
-			<key>Name</key>
-			<string>Category</string>
 			<key>NameOnCreation</key>
 			<true/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>Category</string>
+			<key>Default</key>
+			<false/>
+		</dict>
+		<dict>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
 // Created by ___FULLUSERNAME___ on ___DATE___.
 
-#import "___FILEBASENAME___.h"
+#import &quot;___FILEBASENAME___.h&quot;
 
 @implementation &lt;#class#&gt; (&lt;#name#&gt;)
 
 @end</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<false/>
-			<key>Extension</key>
-			<string>h</string>
-			<key>Name</key>
-			<string>Protocol</string>
 			<key>NameOnCreation</key>
 			<true/>
+			<key>Extension</key>
+			<string>mm</string>
+			<key>Name</key>
+			<string>Category</string>
+			<key>Default</key>
+			<false/>
+		</dict>
+		<dict>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
@@ -216,16 +206,16 @@ ___FILEBASENAME___::~___FILEBASENAME___() {
 &lt;##&gt;
 
 @end</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<false/>
+			<key>NameOnCreation</key>
+			<true/>
 			<key>Extension</key>
 			<string>h</string>
 			<key>Name</key>
-			<string>Objective-C Singleton</string>
-			<key>NameOnCreation</key>
-			<true/>
+			<string>Protocol</string>
+			<key>Default</key>
+			<false/>
+		</dict>
+		<dict>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
@@ -238,22 +228,22 @@ ___FILEBASENAME___::~___FILEBASENAME___() {
 + (___FILEBASENAME___ *)shared___FILEBASENAME___;
 
 @end</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<false/>
-			<key>Extension</key>
-			<string>mm</string>
-			<key>Name</key>
-			<string>Objective-C Singleton</string>
 			<key>NameOnCreation</key>
 			<true/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>Objective-C Singleton</string>
+			<key>Default</key>
+			<false/>
+		</dict>
+		<dict>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
 // Created by ___FULLUSERNAME___ on ___DATE___.
 
-#import "___FILEBASENAME___.h"
+#import &quot;___FILEBASENAME___.h&quot;
 
 @implementation ___FILEBASENAME___
 
@@ -295,9 +285,15 @@ static ___FILEBASENAME___ *shared___FILEBASENAME___;
 }
 
 @end</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Extension</key>
+			<string>mm</string>
+			<key>Name</key>
+			<string>Objective-C Singleton</string>
+			<key>Default</key>
+			<false/>
 		</dict>
 	</array>
-	<key>uuid</key>
-	<string>54152989-9931-4123-8B23-584872677F75</string>
 </dict>
 </plist>

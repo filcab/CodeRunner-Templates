@@ -2,14 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CompilerFlags</key>
-	<string>-std=c++11</string>
 	<key>CompilerScript</key>
 	<true/>
-	<key>ConsoleType</key>
-	<integer>0</integer>
-	<key>Enabled</key>
-	<true/>
+	<key>CompilerFlags</key>
+	<string></string>
 	<key>FileExtensions</key>
 	<array>
 		<string>cpp</string>
@@ -22,33 +18,29 @@
 		<string>hpp</string>
 		<string>h++</string>
 	</array>
-	<key>Grammar</key>
-	<string>source.c++</string>
-	<key>LanguageBundleVersion</key>
-	<integer>1</integer>
+	<key>uuid</key>
+	<string>EC55AB59-7920-4862-B7EB-963CD4BB928A</string>
 	<key>Name</key>
 	<string>C++</string>
 	<key>OutputEncoding</key>
 	<integer>4</integer>
-	<key>RequiresExternalComponents</key>
-	<true/>
 	<key>RunCommand</key>
 	<string>./$compiler</string>
-	<key>SoftTabs</key>
-	<false/>
+	<key>Grammar</key>
+	<string>source.c++</string>
+	<key>RequiresExternalComponents</key>
+	<true/>
+	<key>Enabled</key>
+	<true/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
 	<key>TabWidth</key>
 	<string>4</string>
+	<key>SoftTabs</key>
+	<false/>
 	<key>Templates</key>
 	<array>
 		<dict>
-			<key>Default</key>
-			<true/>
-			<key>Extension</key>
-			<string>cpp</string>
-			<key>Name</key>
-			<string>Main File</string>
-			<key>NameOnCreation</key>
-			<false/>
 			<key>Template</key>
 			<string>#include &lt;iostream&gt;
 
@@ -56,30 +48,28 @@ using namespace std;
 int main(int argc, char *argv[]) {
 	&lt;##&gt;
 }</string>
-			<key>TemplateModified</key>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Extension</key>
+			<string>cpp</string>
+			<key>Name</key>
+			<string>Main File</string>
+			<key>Default</key>
 			<true/>
 		</dict>
 		<dict>
-			<key>Default</key>
+			<key>Template</key>
+			<string></string>
+			<key>NameOnCreation</key>
 			<false/>
 			<key>Extension</key>
 			<string>h</string>
 			<key>Name</key>
 			<string>Header</string>
-			<key>NameOnCreation</key>
-			<false/>
-			<key>Template</key>
-			<string></string>
-		</dict>
-		<dict>
 			<key>Default</key>
 			<false/>
-			<key>Extension</key>
-			<string>h</string>
-			<key>Name</key>
-			<string>Class</string>
-			<key>NameOnCreation</key>
-			<true/>
+		</dict>
+		<dict>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
@@ -95,22 +85,22 @@ public:
 };
 
 #endif</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<false/>
-			<key>Extension</key>
-			<string>cpp</string>
-			<key>Name</key>
-			<string>Class</string>
 			<key>NameOnCreation</key>
 			<true/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>Class</string>
+			<key>Default</key>
+			<false/>
+		</dict>
+		<dict>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
 // Created by ___FULLUSERNAME___ on ___DATE___.
 
-#include "___FILEBASENAME___.h"
+#include &quot;___FILEBASENAME___.h&quot;
 
 ___FILEBASENAME___::___FILEBASENAME___() {
 	&lt;##&gt;
@@ -119,16 +109,16 @@ ___FILEBASENAME___::___FILEBASENAME___() {
 ___FILEBASENAME___::~___FILEBASENAME___() {
 	
 }</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<false/>
-			<key>Extension</key>
-			<string>h</string>
-			<key>Name</key>
-			<string>Header-CPP Pair</string>
 			<key>NameOnCreation</key>
 			<true/>
+			<key>Extension</key>
+			<string>cpp</string>
+			<key>Name</key>
+			<string>Class</string>
+			<key>Default</key>
+			<false/>
+		</dict>
+		<dict>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
@@ -140,27 +130,33 @@ ___FILEBASENAME___::~___FILEBASENAME___() {
 &lt;##&gt;
 
 #endif</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<false/>
-			<key>Extension</key>
-			<string>cpp</string>
-			<key>Name</key>
-			<string>Header-CPP Pair</string>
 			<key>NameOnCreation</key>
 			<true/>
+			<key>Extension</key>
+			<string>h</string>
+			<key>Name</key>
+			<string>Header-CPP Pair</string>
+			<key>Default</key>
+			<false/>
+		</dict>
+		<dict>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
 // Created by ___FULLUSERNAME___ on ___DATE___.
 
-#include "___FILEBASENAME___.h"
+#include &quot;___FILEBASENAME___.h&quot;
 
 &lt;##&gt;</string>
+			<key>NameOnCreation</key>
+			<true/>
+			<key>Extension</key>
+			<string>cpp</string>
+			<key>Name</key>
+			<string>Header-CPP Pair</string>
+			<key>Default</key>
+			<false/>
 		</dict>
 	</array>
-	<key>uuid</key>
-	<string>EC55AB59-7920-4862-B7EB-963CD4BB928A</string>
 </dict>
 </plist>

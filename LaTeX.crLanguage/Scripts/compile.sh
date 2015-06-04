@@ -22,7 +22,7 @@
 #						the CodeRunner console
 
 PATH="$PATH:/usr/texbin"
-output=$(xelatex -halt-on-error "$CR_FILENAME" "${@:1}")
+output=$(pdflatex -halt-on-error "$CR_FILENAME" "${@:1}")
 status=$?
 if [ $status -eq 127 ]; then
 	echo -e "\nTo build LaTeX documents, you need to have MacTeX installed. You can get it at http://tug.org/mactex/"

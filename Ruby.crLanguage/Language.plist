@@ -16,8 +16,6 @@
 	</array>
 	<key>Grammar</key>
 	<string>source.ruby</string>
-	<key>LanguageBundleVersion</key>
-	<integer>1</integer>
 	<key>Name</key>
 	<string>Ruby</string>
 	<key>OutputEncoding</key>
@@ -28,26 +26,24 @@
 	<false/>
 	<key>TabWidth</key>
 	<integer>4</integer>
+	<key>uuid</key>
+	<string>966788B5-C2C2-444C-AB8C-C97862C77C6C</string>
 	<key>Templates</key>
 	<array>
 		<dict>
-			<key>Default</key>
-			<true/>
-			<key>Extension</key>
-			<string>rb</string>
 			<key>Name</key>
 			<string>Ruby Script</string>
+			<key>Default</key>
+			<true/>
 			<key>NameOnCreation</key>
 			<false/>
+			<key>Extension</key>
+			<string>rb</string>
 			<key>Template</key>
 			<string>#!/usr/bin/ruby
 
 &lt;##&gt;</string>
-			<key>TemplateModified</key>
-			<true/>
 		</dict>
 	</array>
-	<key>uuid</key>
-	<string>966788B5-C2C2-444C-AB8C-C97862C77C6C</string>
 </dict>
 </plist>

@@ -16,8 +16,6 @@
 	</array>
 	<key>Grammar</key>
 	<string>source.perl</string>
-	<key>LanguageBundleVersion</key>
-	<integer>1</integer>
 	<key>Name</key>
 	<string>Perl</string>
 	<key>OutputEncoding</key>
@@ -28,26 +26,24 @@
 	<false/>
 	<key>TabWidth</key>
 	<integer>4</integer>
+	<key>uuid</key>
+	<string>64A50F8B-F915-49CE-BD6A-0E5305190918</string>
 	<key>Templates</key>
 	<array>
 		<dict>
-			<key>Default</key>
-			<true/>
-			<key>Extension</key>
-			<string>pl</string>
 			<key>Name</key>
 			<string>Perl Script</string>
+			<key>Default</key>
+			<true/>
 			<key>NameOnCreation</key>
 			<false/>
+			<key>Extension</key>
+			<string>pl</string>
 			<key>Template</key>
 			<string>#!/usr/bin/perl
 
 &lt;##&gt;</string>
-			<key>TemplateModified</key>
-			<true/>
 		</dict>
 	</array>
-	<key>uuid</key>
-	<string>64A50F8B-F915-49CE-BD6A-0E5305190918</string>
 </dict>
 </plist>

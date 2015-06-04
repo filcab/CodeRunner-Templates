@@ -16,10 +16,6 @@
 	</array>
 	<key>Grammar</key>
 	<string>source.shell</string>
-	<key>LanguageBundleVersion</key>
-	<integer>1</integer>
-	<key>LastUsed</key>
-	<date>2015-02-16T07:20:04Z</date>
 	<key>Name</key>
 	<string>Shell Script</string>
 	<key>OutputEncoding</key>
@@ -30,28 +26,24 @@
 	<false/>
 	<key>TabWidth</key>
 	<integer>4</integer>
+	<key>uuid</key>
+	<string>673C976D-FCA5-4110-A78F-5751A98CC481</string>
 	<key>Templates</key>
 	<array>
 		<dict>
-			<key>Default</key>
-			<true/>
-			<key>Extension</key>
-			<string>sh</string>
 			<key>Name</key>
 			<string>Shell Script</string>
+			<key>Default</key>
+			<true/>
 			<key>NameOnCreation</key>
 			<false/>
+			<key>Extension</key>
+			<string>sh</string>
 			<key>Template</key>
 			<string>#!/bin/bash
 
 &lt;##&gt;</string>
-			<key>TemplateModified</key>
-			<true/>
 		</dict>
 	</array>
-	<key>UseCount</key>
-	<integer>9</integer>
-	<key>uuid</key>
-	<string>673C976D-FCA5-4110-A78F-5751A98CC481</string>
 </dict>
 </plist>

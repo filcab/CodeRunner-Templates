@@ -25,7 +25,7 @@
 	<key>OutputEncoding</key>
 	<integer>4</integer>
 	<key>RunCommand</key>
-	<string>echo "&lt;script src=\"http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js\"&gt;&lt;/script&gt;&lt;body&gt;&lt;/body&gt;&lt;script&gt;"; cat $filename; echo "&lt;/script&gt;"</string>
+	<string>echo &quot;&lt;script src=\&quot;http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js\&quot;&gt;&lt;/script&gt;&lt;body&gt;&lt;/body&gt;&lt;script&gt;&quot;; cat $filename; echo &quot;&lt;/script&gt;&quot;</string>
 	<key>SoftTabs</key>
 	<false/>
 	<key>TabWidth</key>

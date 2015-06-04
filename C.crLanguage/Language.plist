@@ -19,6 +19,8 @@
 	<string>source.c</string>
 	<key>LanguageBundleVersion</key>
 	<integer>1</integer>
+	<key>LastUsed</key>
+	<date>2015-06-02T15:37:39Z</date>
 	<key>Name</key>
 	<string>C</string>
 	<key>OutputEncoding</key>
@@ -48,8 +50,6 @@
 int main(int argc, char *argv[]) {
 	&lt;##&gt;
 }</string>
-			<key>TemplateModified</key>
-			<true/>
 		</dict>
 		<dict>
 			<key>Default</key>
@@ -103,6 +103,8 @@ int main(int argc, char *argv[]) {
 &lt;##&gt;</string>
 		</dict>
 	</array>
+	<key>UseCount</key>
+	<integer>2</integer>
 	<key>uuid</key>
 	<string>F158B03F-4059-4FBE-95FB-F101FC3C2097</string>
 </dict>

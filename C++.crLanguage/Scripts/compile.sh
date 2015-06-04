@@ -82,7 +82,7 @@ if [ $noxcode = false ]; then
 fi
 if [ $noxcode = true ]; then
 	# Xcode not installed
-	"$CR_DEVELOPER_DIR/bin/clang" -x c++ -lc++ -o "$out" "${files[@]}" "-I$CR_DEVELOPER_DIR/include" "-I$CR_DEVELOPER_DIR/lib/clang/6.0/include" "${@:1}"
+	"$CR_DEVELOPER_DIR/bin/clang" -x c++ -lc++ -o "$out" "${files[@]}" "-I$CR_DEVELOPER_DIR/include" "-I$CR_DEVELOPER_DIR/lib/clang/6.0/include" "-I$CR_DEVELOPER_DIR/include/c++/v1" "${@:1}"
 	status=$?
 fi
 

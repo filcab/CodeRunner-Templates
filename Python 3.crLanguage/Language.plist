@@ -12,19 +12,12 @@
 	<integer>0</integer>
 	<key>Enabled</key>
 	<true/>
-	<key>Errors</key>
-	<dict>
-		<key>127</key>
-		<string>Could not find Python 3 on your system. You can get it at http://python.org</string>
-	</dict>
 	<key>FileExtensions</key>
 	<array>
 		<string>py</string>
 	</array>
 	<key>Grammar</key>
 	<string>source.python</string>
-	<key>LanguageBundleVersion</key>
-	<integer>1</integer>
 	<key>Name</key>
 	<string>Python 3</string>
 	<key>OutputEncoding</key>
@@ -35,17 +28,19 @@
 	<false/>
 	<key>TabWidth</key>
 	<integer>4</integer>
+	<key>uuid</key>
+	<string>3CB7EE93-841D-41F6-96EE-4C8E8C6927E4</string>
 	<key>Templates</key>
 	<array>
 		<dict>
-			<key>Default</key>
-			<false/>
-			<key>Extension</key>
-			<string>py</string>
 			<key>Name</key>
 			<string>Class</string>
+			<key>Default</key>
+			<false/>
 			<key>NameOnCreation</key>
 			<true/>
+			<key>Extension</key>
+			<string>py</string>
 			<key>Template</key>
 			<string># ___FILENAME___
 # Created by ___FULLUSERNAME___ on ___DATE___.
@@ -53,11 +48,12 @@
 class ___FILEBASENAME___:
 	def __init__(self):
 		&lt;##&gt;</string>
-			<key>TemplateModified</key>
-			<true/>
 		</dict>
 	</array>
-	<key>uuid</key>
-	<string>3CB7EE93-841D-41F6-96EE-4C8E8C6927E4</string>
+	<key>Errors</key>
+	<dict>
+		<key>127</key>
+		<string>Could not find Python 3 on your system. You can get it at http://python.org</string>
+	</dict>
 </dict>
 </plist>

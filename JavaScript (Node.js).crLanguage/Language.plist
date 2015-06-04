@@ -12,21 +12,12 @@
 	<integer>0</integer>
 	<key>Enabled</key>
 	<true/>
-	<key>Errors</key>
-	<dict>
-		<key>127</key>
-		<string>Could not find Node.js on your system. You can get it at http://nodejs.org</string>
-	</dict>
 	<key>FileExtensions</key>
 	<array>
 		<string>js</string>
 	</array>
 	<key>Grammar</key>
 	<string>source.js.node</string>
-	<key>LanguageBundleVersion</key>
-	<integer>1</integer>
-	<key>LastUsed</key>
-	<date>2015-02-16T07:18:38Z</date>
 	<key>Name</key>
 	<string>JavaScript (Node.js)</string>
 	<key>OutputEncoding</key>
@@ -37,11 +28,12 @@
 	<false/>
 	<key>TabWidth</key>
 	<integer>4</integer>
-	<key>Templates</key>
-	<array/>
-	<key>UseCount</key>
-	<integer>1</integer>
 	<key>uuid</key>
 	<string>C871AFED-ADA2-4CDA-955A-68B11C6AA5B5</string>
+	<key>Errors</key>
+	<dict>
+		<key>127</key>
+		<string>Could not find Node.js on your system. You can get it at http://nodejs.org</string>
+	</dict>
 </dict>
 </plist>
