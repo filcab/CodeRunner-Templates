@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerFlags</key>
+	<string></string>
+	<key>CompilerScript</key>
+	<true/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>FileExtensions</key>
+	<array>
+		<string>rs</string>
+	</array>
+	<key>Grammar</key>
+	<string>source.rs</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>Name</key>
+	<string>Rust</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RunCommand</key>
+	<string>./$compiler</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<string>4</string>
+	<key>Templates</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<integer>1</integer>
+			<key>Extension</key>
+			<string>rs</string>
+			<key>Name</key>
+			<string>Main File</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string>fn main() {
+	&lt;##&gt;
+}</string>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>834D5121-761E-4B58-B40B-82FA581EB2AE</string>
+	<key>RequiresExternalComponents</key>
+	<true/>
+	<key>Debugger</key>
+	<string>gdb</string>
+	<key>Installer</key>
+	<array>
+		<string>rust</string>
+		<string>the Rust compiler</string>
+		<string>https://www.rust-lang.org/</string>
+	</array>
+</dict>
+</plist>

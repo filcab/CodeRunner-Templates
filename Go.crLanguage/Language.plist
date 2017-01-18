@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompilerFlags</key>
+	<string></string>
+	<key>CompilerScript</key>
+	<true/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
+	<key>Enabled</key>
+	<true/>
+	<key>FileExtensions</key>
+	<array>
+		<string>go</string>
+	</array>
+	<key>Grammar</key>
+	<string>source.go</string>
+	<key>LanguageBundleVersion</key>
+	<integer>1</integer>
+	<key>Name</key>
+	<string>Go</string>
+	<key>OutputEncoding</key>
+	<integer>4</integer>
+	<key>RunCommand</key>
+	<string>./$compiler</string>
+	<key>SoftTabs</key>
+	<false/>
+	<key>TabWidth</key>
+	<integer>4</integer>
+	<key>Templates</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<integer>1</integer>
+			<key>Extension</key>
+			<string>go</string>
+			<key>Name</key>
+			<string>Main File</string>
+			<key>NameOnCreation</key>
+			<false/>
+			<key>Template</key>
+			<string>package main
+
+func main() {
+	&lt;##&gt;
+}</string>
+		</dict>
+	</array>
+	<key>uuid</key>
+	<string>31392064-DD21-4114-9BEB-7FA18B503CD8</string>
+	<key>RequiresExternalComponents</key>
+	<true/>
+	<key>Debugger</key>
+	<string>gdb</string>
+	<key>Installer</key>
+	<array>
+		<string>go</string>
+		<string>the Go compiler</string>
+		<string>http://golang.org</string>
+	</array>
+</dict>
+</plist>
