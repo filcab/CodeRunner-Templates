@@ -21,6 +21,11 @@
 # Output (stderr):		Anything outputted here will be displayed in
 #						the CodeRunner console
 
+if [ ! -z $CR_SANDBOXED ]; then
+	echo -e "To run Objective-C code, you need to use the non-App Store version of CodeRunner, which is free for App Store customers.\n\nDownload the non-App Store version of CodeRunner at https://coderunnerapp.com/. You will also need Xcode to run Objective-C code, which can be downloaded from the Mac App Store."
+	exit 1
+fi
+
 out=`echo "$CR_FILENAME" | sed 's/\(.*\)\..*/\1/'`
 if [ -d "$out" ]; then
 	out="$out.out"
@@ -39,12 +44,17 @@ set -- "${args[@]}"
 # CodeRunner autoinclude - automatically links included files
 # Disable by using -cr-noautoinclude compile flag
 if [ $autoinclude = true ]; then
-	filelist=`php "$CR_DEVELOPER_DIR"/autoinclude.php "$PWD/$CR_FILENAME"`
-	# Hacky way of getting bash to interpret the files separated by ':' as distinct arguments
-	OIFS="$IFS"
-	IFS=':'
-	read -a files <<< "${filelist}"
-	IFS="$OIFS"
+	filelist=`php "$CR_DEVELOPER_DIR"/autoinclude.php "$PWD/$CR_FILENAME" 2>/dev/null`
+	includestatus=$?
+	if [ $includestatus -eq 0 ]; then
+		# Hacky way of getting bash to interpret the files separated by ':' as distinct arguments
+		OIFS="$IFS"
+		IFS=':'
+		read -a files <<< "${filelist}"
+		IFS="$OIFS"
+	else
+		files=("$CR_FILENAME")
+	fi
 else
 	files=("$CR_FILENAME")
 fi
@@ -64,7 +74,7 @@ elif [ $s -ne 0 ]; then
 	exit $s
 fi
 
-xcrun clang -ObjC -o "$out" "${files[@]}" "${@:1}"
+xcrun clang -ObjC -o "$out" "${files[@]}" "${@:1}" ${CR_DEBUGGING:+-g}
 status=$?
 
 if [ $status -eq 0 ]; then

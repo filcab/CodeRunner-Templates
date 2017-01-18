@@ -21,15 +21,11 @@
 # Output (stderr):		Anything outputted here will be displayed in
 #						the CodeRunner console
 
+PATH="$PATH:/Library/Frameworks/Mono.framework/Versions/Current/bin"
 compname=`echo "$CR_FILENAME" | sed 's/\(.*\)\..*/\1/'`.exe
-gmcs "$CR_FILENAME" "${@:1}"
+mcs "$CR_FILENAME" "${@:1}"
 status=$?
-if [ $status -eq 0 ]
-then
-echo $compname
-exit 0
-elif [ $status -eq 127 ]
-then
-echo -e "\nIn order to run C# code, you need to have Mono installed. You can get it at http://mono-project.com"
+if [ $status -eq 0 ]; then
+	echo $compname
 fi
 exit $status

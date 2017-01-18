@@ -2,37 +2,49 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CompilerScript</key>
-	<true/>
 	<key>CompilerFlags</key>
 	<string></string>
+	<key>CompilerScript</key>
+	<true/>
+	<key>ConsoleType</key>
+	<integer>0</integer>
+	<key>Enabled</key>
+	<true/>
 	<key>FileExtensions</key>
 	<array>
 		<string>cs</string>
 	</array>
-	<key>uuid</key>
-	<string>9A37339F-AB15-4DDD-BF09-4C54AB627DA4</string>
+	<key>Grammar</key>
+	<string>source.cs</string>
+	<key>Installer</key>
+	<array>
+		<string>csharp</string>
+		<string>Mono</string>
+		<string>http://www.mono-project.com/</string>
+	</array>
 	<key>Name</key>
 	<string>C#</string>
 	<key>OutputEncoding</key>
 	<integer>4</integer>
-	<key>RunCommand</key>
-	<string>mono $compiler</string>
-	<key>Grammar</key>
-	<string>source.cs</string>
 	<key>RequiresExternalComponents</key>
 	<true/>
-	<key>Enabled</key>
-	<true/>
-	<key>ConsoleType</key>
-	<integer>0</integer>
-	<key>TabWidth</key>
-	<string>4</string>
+	<key>RunCommand</key>
+	<string>PATH="/Library/Frameworks/Mono.framework/Versions/Current/bin:$PATH"; mono $compiler</string>
 	<key>SoftTabs</key>
 	<false/>
+	<key>TabWidth</key>
+	<string>4</string>
 	<key>Templates</key>
 	<array>
 		<dict>
+			<key>Default</key>
+			<true/>
+			<key>Extension</key>
+			<string>cs</string>
+			<key>Name</key>
+			<string>Main File</string>
+			<key>NameOnCreation</key>
+			<false/>
 			<key>Template</key>
 			<string>using System;
 
@@ -43,16 +55,16 @@ class Untitled
 		&lt;##&gt;
 	}
 }</string>
-			<key>NameOnCreation</key>
+		</dict>
+		<dict>
+			<key>Default</key>
 			<false/>
 			<key>Extension</key>
 			<string>cs</string>
 			<key>Name</key>
-			<string>Main File</string>
-			<key>Default</key>
+			<string>Class</string>
+			<key>NameOnCreation</key>
 			<true/>
-		</dict>
-		<dict>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
@@ -62,15 +74,9 @@ public class ___FILEBASENAME___
 {
 	&lt;##&gt;
 }</string>
-			<key>NameOnCreation</key>
-			<true/>
-			<key>Extension</key>
-			<string>cs</string>
-			<key>Name</key>
-			<string>Class</string>
-			<key>Default</key>
-			<false/>
 		</dict>
 	</array>
+	<key>uuid</key>
+	<string>9A37339F-AB15-4DDD-BF09-4C54AB627DA4</string>
 </dict>
 </plist>

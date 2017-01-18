@@ -10,6 +10,8 @@
 	<true/>
 	<key>ConsoleType</key>
 	<integer>0</integer>
+	<key>Debugger</key>
+	<string>lldb</string>
 	<key>Enabled</key>
 	<true/>
 	<key>FileExtensions</key>
@@ -22,17 +24,25 @@
 	<string>Swift</string>
 	<key>OutputEncoding</key>
 	<integer>4</integer>
+	<key>RequiresExternalComponents</key>
+	<true/>
 	<key>RunCommand</key>
 	<string>./$compiler</string>
 	<key>SoftTabs</key>
 	<false/>
 	<key>TabWidth</key>
 	<integer>4</integer>
-	<key>uuid</key>
-	<string>8EB61A41-AAC1-4C23-B110-2E2C8B5E1162</string>
 	<key>Templates</key>
 	<array>
 		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Extension</key>
+			<string>swift</string>
+			<key>Name</key>
+			<string>Class</string>
+			<key>NameOnCreation</key>
+			<true/>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
@@ -41,16 +51,16 @@
 class ___FILEBASENAME___ {
 	&lt;##&gt;
 }</string>
-			<key>NameOnCreation</key>
-			<true/>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<false/>
 			<key>Extension</key>
 			<string>swift</string>
 			<key>Name</key>
-			<string>Class</string>
-			<key>Default</key>
-			<false/>
-		</dict>
-		<dict>
+			<string>Class (NSObject)</string>
+			<key>NameOnCreation</key>
+			<true/>
 			<key>Template</key>
 			<string>//
 // ___FILENAME___
@@ -61,15 +71,9 @@ import Foundation
 class ___FILEBASENAME___: NSObject {
 	&lt;##&gt;
 }</string>
-			<key>NameOnCreation</key>
-			<true/>
-			<key>Extension</key>
-			<string>swift</string>
-			<key>Name</key>
-			<string>Class (NSObject)</string>
-			<key>Default</key>
-			<false/>
 		</dict>
 	</array>
+	<key>uuid</key>
+	<string>8EB61A41-AAC1-4C23-B110-2E2C8B5E1162</string>
 </dict>
 </plist>

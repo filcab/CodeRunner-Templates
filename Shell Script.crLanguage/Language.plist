@@ -8,6 +8,8 @@
 	<false/>
 	<key>ConsoleType</key>
 	<integer>0</integer>
+	<key>Debugger</key>
+	<string>bashdb</string>
 	<key>Enabled</key>
 	<true/>
 	<key>FileExtensions</key>
@@ -26,24 +28,24 @@
 	<false/>
 	<key>TabWidth</key>
 	<integer>4</integer>
-	<key>uuid</key>
-	<string>673C976D-FCA5-4110-A78F-5751A98CC481</string>
 	<key>Templates</key>
 	<array>
 		<dict>
-			<key>Name</key>
-			<string>Shell Script</string>
 			<key>Default</key>
 			<true/>
-			<key>NameOnCreation</key>
-			<false/>
 			<key>Extension</key>
 			<string>sh</string>
+			<key>Name</key>
+			<string>Shell Script</string>
+			<key>NameOnCreation</key>
+			<false/>
 			<key>Template</key>
 			<string>#!/bin/bash
 
 &lt;##&gt;</string>
 		</dict>
 	</array>
+	<key>uuid</key>
+	<string>673C976D-FCA5-4110-A78F-5751A98CC481</string>
 </dict>
 </plist>

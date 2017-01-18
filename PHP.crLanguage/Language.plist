@@ -8,6 +8,8 @@
 	<false/>
 	<key>ConsoleType</key>
 	<integer>0</integer>
+	<key>Debugger</key>
+	<string>phpdbg</string>
 	<key>Enabled</key>
 	<true/>
 	<key>FileExtensions</key>
@@ -26,33 +28,31 @@
 	<false/>
 	<key>TabWidth</key>
 	<integer>4</integer>
-	<key>uuid</key>
-	<string>DC909571-5FC3-4625-90FD-A59B3171788D</string>
 	<key>Templates</key>
 	<array>
 		<dict>
-			<key>Name</key>
-			<string>PHP Script</string>
 			<key>Default</key>
 			<true/>
-			<key>NameOnCreation</key>
-			<false/>
 			<key>Extension</key>
 			<string>php</string>
+			<key>Name</key>
+			<string>PHP Script</string>
+			<key>NameOnCreation</key>
+			<false/>
 			<key>Template</key>
 			<string>&lt;?php
 	&lt;##&gt;
 ?&gt;</string>
 		</dict>
 		<dict>
-			<key>Name</key>
-			<string>Class</string>
 			<key>Default</key>
 			<false/>
-			<key>NameOnCreation</key>
-			<true/>
 			<key>Extension</key>
 			<string>php</string>
+			<key>Name</key>
+			<string>Class</string>
+			<key>NameOnCreation</key>
+			<true/>
 			<key>Template</key>
 			<string>&lt;?php
 	//
@@ -64,5 +64,7 @@
 ?&gt;</string>
 		</dict>
 	</array>
+	<key>uuid</key>
+	<string>DC909571-5FC3-4625-90FD-A59B3171788D</string>
 </dict>
 </plist>

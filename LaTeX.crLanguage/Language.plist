@@ -16,12 +16,20 @@
 	</array>
 	<key>Grammar</key>
 	<string>text.tex.latex</string>
+	<key>Installer</key>
+	<array>
+		<string>latex</string>
+		<string>MacTeX</string>
+		<string>http://tug.org/mactex/</string>
+	</array>
 	<key>Name</key>
 	<string>LaTeX</string>
 	<key>OutputEncoding</key>
 	<integer>4</integer>
+	<key>RequiresExternalComponents</key>
+	<true/>
 	<key>RunCommand</key>
-	<string>echo &quot;&lt;body style=\&quot;margin:0;\&quot;&gt;&lt;iframe src=\&quot;file://$compiler\&quot; style=\&quot;width:100%;height:100%;\&quot; frameborder=0&gt;&lt;/iframe&gt;&quot;</string>
+	<string>echo "&lt;body style=\"margin:0;\"&gt;&lt;iframe src=\"file://$compiler\" style=\"width:100%;height:100%;\" frameborder=0&gt;&lt;/iframe&gt;"</string>
 	<key>SoftTabs</key>
 	<false/>
 	<key>TabWidth</key>

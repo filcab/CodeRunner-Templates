@@ -33,12 +33,15 @@ if [ $status -eq 69 ]; then
 	echo "To run swift code you need to open Xcode and accept the developer license agreement."
 	exit 69
 else
-	xcrun swiftc -o "$out" "$CR_FILENAME" "${@:1}"
+	if [ "$CR_FILENAME" = "main.swift" ]; then
+		xcrun -sdk macosx swiftc -o "$out" *.swift "${@:1}" ${CR_DEBUGGING:+-g}
+	else
+		xcrun -sdk macosx swiftc -o "$out" "$CR_FILENAME" "${@:1}" ${CR_DEBUGGING:+-g}
+	fi
 	status=$?
 fi
 
-if [ $status -eq 0 ]
-then
+if [ $status -eq 0 ]; then
 	echo "$out"
 fi
 exit $status

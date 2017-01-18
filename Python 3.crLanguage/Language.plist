@@ -10,6 +10,8 @@
 	<false/>
 	<key>ConsoleType</key>
 	<integer>0</integer>
+	<key>Debugger</key>
+	<string>pdb</string>
 	<key>Enabled</key>
 	<true/>
 	<key>FileExtensions</key>
@@ -17,30 +19,36 @@
 		<string>py</string>
 	</array>
 	<key>Grammar</key>
-	<string>source.python</string>
+	<string>source.python.3</string>
+	<key>Installer</key>
+	<array>
+		<string>python3</string>
+		<string>Python 3</string>
+		<string>http://python.org</string>
+	</array>
 	<key>Name</key>
 	<string>Python 3</string>
 	<key>OutputEncoding</key>
 	<integer>4</integer>
+	<key>RequiresExternalComponents</key>
+	<true/>
 	<key>RunCommand</key>
 	<string>python3 $filename</string>
 	<key>SoftTabs</key>
 	<false/>
 	<key>TabWidth</key>
 	<integer>4</integer>
-	<key>uuid</key>
-	<string>3CB7EE93-841D-41F6-96EE-4C8E8C6927E4</string>
 	<key>Templates</key>
 	<array>
 		<dict>
-			<key>Name</key>
-			<string>Class</string>
 			<key>Default</key>
 			<false/>
-			<key>NameOnCreation</key>
-			<true/>
 			<key>Extension</key>
 			<string>py</string>
+			<key>Name</key>
+			<string>Class</string>
+			<key>NameOnCreation</key>
+			<true/>
 			<key>Template</key>
 			<string># ___FILENAME___
 # Created by ___FULLUSERNAME___ on ___DATE___.
@@ -50,10 +58,7 @@ class ___FILEBASENAME___:
 		&lt;##&gt;</string>
 		</dict>
 	</array>
-	<key>Errors</key>
-	<dict>
-		<key>127</key>
-		<string>Could not find Python 3 on your system. You can get it at http://python.org</string>
-	</dict>
+	<key>uuid</key>
+	<string>3CB7EE93-841D-41F6-96EE-4C8E8C6927E4</string>
 </dict>
 </plist>

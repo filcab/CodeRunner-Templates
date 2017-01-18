@@ -2,14 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CodeTemplate</key>
-	<string></string>
 	<key>CompilerFlags</key>
 	<string></string>
 	<key>CompilerScript</key>
 	<false/>
 	<key>ConsoleType</key>
 	<integer>0</integer>
+	<key>Debugger</key>
+	<string>pdb</string>
 	<key>Enabled</key>
 	<true/>
 	<key>FileExtensions</key>
@@ -28,33 +28,31 @@
 	<false/>
 	<key>TabWidth</key>
 	<integer>4</integer>
-	<key>uuid</key>
-	<string>449F8083-10A9-446C-9482-F14F7C1A9464</string>
 	<key>Templates</key>
 	<array>
 		<dict>
-			<key>Name</key>
-			<string>Python Script</string>
 			<key>Default</key>
 			<true/>
-			<key>NameOnCreation</key>
-			<false/>
 			<key>Extension</key>
 			<string>py</string>
+			<key>Name</key>
+			<string>Python Script</string>
+			<key>NameOnCreation</key>
+			<false/>
 			<key>Template</key>
 			<string>#!/usr/bin/python
 
 &lt;##&gt;</string>
 		</dict>
 		<dict>
-			<key>Name</key>
-			<string>Class</string>
 			<key>Default</key>
 			<false/>
-			<key>NameOnCreation</key>
-			<true/>
 			<key>Extension</key>
 			<string>py</string>
+			<key>Name</key>
+			<string>Class</string>
+			<key>NameOnCreation</key>
+			<true/>
 			<key>Template</key>
 			<string>#!/usr/bin/python
 # ___FILENAME___
@@ -65,5 +63,7 @@ class ___FILEBASENAME___:
 		&lt;##&gt;</string>
 		</dict>
 	</array>
+	<key>uuid</key>
+	<string>449F8083-10A9-446C-9482-F14F7C1A9464</string>
 </dict>
 </plist>

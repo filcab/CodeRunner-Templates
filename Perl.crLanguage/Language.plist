@@ -8,6 +8,8 @@
 	<false/>
 	<key>ConsoleType</key>
 	<integer>0</integer>
+	<key>Debugger</key>
+	<string>perldebug</string>
 	<key>Enabled</key>
 	<true/>
 	<key>FileExtensions</key>
@@ -26,24 +28,24 @@
 	<false/>
 	<key>TabWidth</key>
 	<integer>4</integer>
-	<key>uuid</key>
-	<string>64A50F8B-F915-49CE-BD6A-0E5305190918</string>
 	<key>Templates</key>
 	<array>
 		<dict>
-			<key>Name</key>
-			<string>Perl Script</string>
 			<key>Default</key>
 			<true/>
-			<key>NameOnCreation</key>
-			<false/>
 			<key>Extension</key>
 			<string>pl</string>
+			<key>Name</key>
+			<string>Perl Script</string>
+			<key>NameOnCreation</key>
+			<false/>
 			<key>Template</key>
 			<string>#!/usr/bin/perl
 
 &lt;##&gt;</string>
 		</dict>
 	</array>
+	<key>uuid</key>
+	<string>64A50F8B-F915-49CE-BD6A-0E5305190918</string>
 </dict>
 </plist>

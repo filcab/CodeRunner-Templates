@@ -48,12 +48,17 @@ set -- "${args[@]}"
 # CodeRunner autoinclude - automatically links included files
 # Disable by using -cr-noautoinclude compile flag
 if [ $autoinclude = true ]; then
-	filelist=`php "$CR_DEVELOPER_DIR"/autoinclude.php "$PWD/$CR_FILENAME"`
-	# Hacky way of getting bash to interpret the files separated by ':' as distinct arguments
-	OIFS="$IFS"
-	IFS=':'
-	read -a files <<< "${filelist}"
-	IFS="$OIFS"
+	filelist=`php "$CR_DEVELOPER_DIR"/autoinclude.php "$PWD/$CR_FILENAME" 2>/dev/null`
+	includestatus=$?
+	if [ $includestatus -eq 0 ]; then
+		# Hacky way of getting bash to interpret the files separated by ':' as distinct arguments
+		OIFS="$IFS"
+		IFS=':'
+		read -a files <<< "${filelist}"
+		IFS="$OIFS"
+	else
+		files=("$CR_FILENAME")
+	fi
 else
 	files=("$CR_FILENAME")
 fi
@@ -75,14 +80,14 @@ if [ $noxcode = false ]; then
 		if [ $? -eq 69 ] && [ $lion = false ]; then
 			noxcode=true
 		else
-			xcrun clang++ -x c++ -lc++ -o "$out" "${files[@]}" "${@:1}"
+			xcrun clang++ -x c++ -lc++ -o "$out" "${files[@]}" "${@:1}" ${CR_DEBUGGING:+-g}
 			status=$?
 		fi
 	fi
 fi
 if [ $noxcode = true ]; then
 	# Xcode not installed
-	"$CR_DEVELOPER_DIR/bin/clang" -x c++ -lc++ -o "$out" "${files[@]}" "-I$CR_DEVELOPER_DIR/include" "-I$CR_DEVELOPER_DIR/lib/clang/6.0/include" "-I$CR_DEVELOPER_DIR/include/c++/v1" "${@:1}"
+	"$CR_DEVELOPER_DIR/bin/clang" -x c++ -lc++ -o "$out" "${files[@]}" "-I$CR_DEVELOPER_DIR/include" "-I$CR_DEVELOPER_DIR/lib/clang/6.0/include" "-I$CR_DEVELOPER_DIR/include/c++/v1" "${@:1}" ${CR_DEBUGGING:+-g}
 	status=$?
 fi
 

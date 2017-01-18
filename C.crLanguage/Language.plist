@@ -8,6 +8,8 @@
 	<true/>
 	<key>ConsoleType</key>
 	<integer>0</integer>
+	<key>Debugger</key>
+	<string>gdb</string>
 	<key>Enabled</key>
 	<true/>
 	<key>FileExtensions</key>
@@ -20,13 +22,11 @@
 	<key>LanguageBundleVersion</key>
 	<integer>1</integer>
 	<key>LastUsed</key>
-	<date>2015-06-02T15:37:39Z</date>
+	<date>2017-01-18T11:15:45Z</date>
 	<key>Name</key>
 	<string>C</string>
 	<key>OutputEncoding</key>
 	<integer>4</integer>
-	<key>RequiresExternalComponents</key>
-	<true/>
 	<key>RunCommand</key>
 	<string>./$compiler</string>
 	<key>SoftTabs</key>
@@ -104,7 +104,7 @@ int main(int argc, char *argv[]) {
 		</dict>
 	</array>
 	<key>UseCount</key>
-	<integer>2</integer>
+	<integer>5</integer>
 	<key>uuid</key>
 	<string>F158B03F-4059-4FBE-95FB-F101FC3C2097</string>
 </dict>

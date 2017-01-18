@@ -21,12 +21,10 @@
 # Output (stderr):		Anything outputted here will be displayed in
 #						the CodeRunner console
 
-PATH="$PATH:/usr/texbin"
+PATH="$PATH:/usr/texbin:/Library/TeX/texbin:/Library/TeX/Distributions/Programs/texbin"
 output=$(pdflatex -halt-on-error "$CR_FILENAME" "${@:1}")
 status=$?
-if [ $status -eq 127 ]; then
-	echo -e "\nTo build LaTeX documents, you need to have MacTeX installed. You can get it at http://tug.org/mactex/"
-elif [ $status -eq 0 ]; then
+if [ $status -eq 0 ]; then
 	name=`echo "$CR_FILENAME" | sed 's/\(.*\)\..*/\1/'`
 	echo "$PWD/$name.pdf"
 else
